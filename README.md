@@ -65,6 +65,16 @@ Execute os comandos abaixo para instalar e executar o aplicativo.
     #Install dependencies
     yarn
 
+    #Start the web-app
+    yarn start
+   ```
+   ```sh
+    #Go to mobile folder
+    cd nlw-1edicao-rocketseat/mobile
+
     #Install dependencies
+    yarn
+
+    #Start the mobile app
     yarn start
    ```
