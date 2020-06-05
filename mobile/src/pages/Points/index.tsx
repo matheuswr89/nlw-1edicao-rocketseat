@@ -23,8 +23,8 @@ interface Point {
 }
 
 interface Params {
-  uf: string,
-  city: string
+  selectedUf: string;
+  selectedCity: string
 }
 
 export default function Points() {
@@ -60,8 +60,8 @@ export default function Points() {
   useEffect(() => {
     api.get('points', {
       params: {
-        city: routeParam.city,
-        uf: routeParam.uf,
+        city: routeParam.selectedCity,
+        uf: routeParam.selectedUf,
         items: selectedItems
       }
     }).then(response => {
